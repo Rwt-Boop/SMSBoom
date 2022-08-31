@@ -52,12 +52,12 @@
    2. `Win`+`R` 打开cmd.输入存放的盘符.例如: `E:` 然后cd到文件夹,例如 `cd SMS`
    ![](https://cdn.jsdelivr.net/gh/AdminWhaleFall/SMSBoom@master/img/cmd1.png)
    
-   3. 确认 cmd 路径是 EXE 所在路径后,cmd 输入:`smsboom_pyinstall.exe`,若出现命令提示,则说明脚本已正常运行. 
+   3. 确认 cmd 路径是 EXE 所在路径后,cmd 输入:`smsboom.exe`,若出现命令提示,则说明脚本已正常运行. 
    ![](https://cdn.jsdelivr.net/gh/AdminWhaleFall/SMSBoom@master/img/cmd2.png)
 
    4. 使用前必须更新一遍最新接口
     ```shell
-    smsboom_pyinstall.exe update
+    smsboom.exe update
     ```  
     > 若更新接口出现错误 `ssl_`,请参见 [issue](https://github.com/AdminWhaleFall/SMSBoom/issues/2) **关闭代理软件**再 update.
 
@@ -68,31 +68,31 @@
    启动64个线程,轰//炸一个人的手机号(198xxxxxxxx),只轰//炸一波。
    
    ```shell
-   smsboom_pyinstall.exe run -t 64 -p 198xxxxxxxxx
+   smsboom.exe run -t 64 -p 198xxxxxxxxx
    ```
 
    启动64个线程,轰//炸一个人的手机号(19xxxxxxx),启动循环轰//炸, 轮番轰//炸60次
 
    ```shell
-   smsboom_pyinstall.exe run -t 64 -p 198xxxxxxxxx -f 60
+   smsboom.exe run -t 64 -p 198xxxxxxxxx -f 60
    ```
    
    启动64个线程,轰//炸一个人的手机号(19xxxxxxx),启动循环轰//炸, 轮番轰//炸60次, 每次间隔30秒
 
    ```shell
-   smsboom_pyinstall.exe run -t 64 -p 198xxxxxxxxx -f 60 -i 30
+   smsboom.exe run -t 64 -p 198xxxxxxxxx -f 60 -i 30
    ```
    
    启动64个线程,轰//炸一个人的手机号(19xxxxxxx),启动循环轰//炸, 轮番轰//炸60次, 每次间隔30秒, 开启代理列表进行轰炸
 
    ```shell
-   smsboom_pyinstall.exe run -t 64 -p 198xxxxxxxxx -f 60 -i 30 -e
+   smsboom.exe run -t 64 -p 198xxxxxxxxx -f 60 -i 30 -e
    ```
 
    启动64个线程,轰//炸多个人的手机号(138xxx,139xxxx),启动循环轰//炸, 轮番轰炸60次, 每次间隔30秒, 开启代理列表进行轰炸
 
    ```shell
-   smsboom_pyinstall.exe run -t 64 -p 138xxxxxxxx -p 139xxxxxxxx -f 60 -i 30 -e
+   smsboom.exe run -t 64 -p 138xxxxxxxx -p 139xxxxxxxx -f 60 -i 30 -e
    ```
 
 
@@ -313,26 +313,4 @@ Options:
 ![](img/webui-test.png)  
 ![](img/webui-test-2.png)  
 
-## 赞助
-[爱发电🔗](https://afdian.net/@smsboom)  
 
-> 赞助的金额将用于我每月治疗 **抑/郁症** 的支出.谢谢大家的支持和鼓励! **比心ing**
-
-
-## Star ♥ 趋势图
-
-<img src="https://starchart.cc/OpenEthan/smsboom.svg">
-
-## ✨讨论
-
-欢迎加入讨论对项目提出问题和建议！！！mua!
-
-### 企鹅🐧群
-> 企鹅群不允许讨论相关敏感信息!违者上飞机票✈
-
-2022/7/6 停止运作.
-
-### Telegram Channel (TG群组)
-> 涉及敏/感信息,政/治,民/主运动话题请到 **TG群聊**
-
-[SMSBoomPr](https://t.me/SMSBoomPr)
